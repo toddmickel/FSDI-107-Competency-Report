@@ -1,0 +1,216 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    background-image: radial-gradient(circle, darkblue, aqua);
+    gap: 1rem;
+    font-family: 'KoHo', sans-serif;
+    border-top: 2px solid darkslateblue;
+}
+
+#welcome {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.container-fluid {
+    padding: 1rem 0 30rem;
+}
+
+.info-block {
+    background-color: rgb(155, 194, 207);
+    border: 2px solid darkslateblue;
+    border-radius: 6px;
+    width: 75%;
+    padding:1rem 5rem;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    border-top: 2px solid darkslateblue;
+    border-right: 2px solid darkslateblue;
+    border-left: 2px solid darkslateblue;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-block {
+    background-color: rgb(155, 194, 207);
+    border: 2px solid darkslateblue;
+    margin-top: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 2rem;
+    line-height: normal;
+}
+
+.about-block p {
+    font-size: 1.5rem;
+}
+
+#imp-star {
+    margin-top: .7rem;
+}
+
+#details {
+    flex: 1;
+    background-color: rgb(155, 194, 207);
+    padding:.5rem;
+    border: 2px solid darkslateblue;
+    border-radius: 6px;
+    margin-left: 1rem;
+}
+
+.short-details {
+    height: 37rem;
+}
+
+.tall-details {
+    height: 41rem;
+}
+
+#details button {
+    margin-top: 1rem;
+}
+
+#list {
+    flex: 2;
+    margin-left: 1rem;
+    background-color: rgba(0, 0, 139, .4);
+    padding-left: .5rem;
+    margin-right: .5rem;
+    border-radius: 6px;
+    border: 2px solid darkslateblue;
+}
+
+#list h3 {
+    color: white;
+}
+
+#imp-star {
+    font-size: 1.5rem;
+}
+
+.displayed-task div {
+    overflow: auto;
+}
+.displayed-task {
+    display: grid;
+    grid-template-columns: 35% 25% 30% 10%;
+    grid-template-rows: 50px 100px;
+    border: 3px solid darkslateblue;
+    border-radius: 6px;
+    margin: 1rem 1rem 1rem 0;
+    background-color: rgb(155, 194, 207);
+}
+
+.task-header {
+    padding: .5rem 1rem .5rem 1rem;
+    grid-column: 1 / span 4;
+    border-bottom: 1px solid darkslateblue;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.task-header .fas {
+    grid-column: 1;
+}
+
+.task-header alert {
+    grid-column: 2;
+    overflow: auto;
+}
+
+.task-header .btn {
+    grid-column: 3;
+}
+
+
+.task-detail {
+    padding: .2rem .5rem .2rem .5rem;
+    grid-column: 1;
+
+}
+
+.task-location {
+    padding: .2rem .5rem .2rem .5rem;
+    grid-column: 2;
+    border-left: 1px solid darkslateblue;
+    border-right: 1px solid darkslateblue;
+}
+
+.due-date {
+    padding: .2rem .5rem .2rem .5rem;
+    grid-column: 3;
+    border-right: 1px solid darkslateblue;
+}
+
+.del-btn-cont {
+    margin: auto;
+}
+
+.del-btn-cont button {
+    background-color: rgb(155, 194, 207);
+    border:none;
+}
+
+.del-btn-cont button:hover {
+    background-color: rgb(155, 194, 207);
+    border:none;
+}
+
+.del-btn-cont i:hover {
+    background-color: rgb(155, 194, 207);
+    color:red;
+}
+
+.del-btn-cont i {
+    color: darkslateblue;
+    font-size: 2rem;
+}
+
+.task-header .del-btn-cont i {
+    color: darkslateblue;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.task-header .del-btn-cont i:hover {
+    background-color: rgb(155, 194, 207);
+    color:red;
+}
+
+
+.task-header .important {
+    color: darkred;
+}
+
+.alert {
+    margin-top: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.completed-tasks .displayed-task {
+    background-color: lightgray;
+    color: darkgray;
+}
+
+.completed-tasks .del-btn-cont button {
+    background-color: lightgray;
+} 
+
+.completed-tasks .del-btn-cont i {
+    color: darkgray;
+} 
+
+#completed-list {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2px solid darkslateblue;
+}
